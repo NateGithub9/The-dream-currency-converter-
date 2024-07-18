@@ -21,6 +21,7 @@ curl_close($curl);
 $convertedData = json_decode($response, true);
 $convertedAmount = $convertedData['rates']['EUR']['rate_for_amount'];
 
+header('Content-Type: text/html');
 echo "<h2>Converted amount:</h2>";
 echo "<p>" . $convertedAmount . " Euros</p>";
 ?>
