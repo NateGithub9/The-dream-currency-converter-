@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <form action="converter.php" method="GET">
+        <label for="fromCurrency">Choose currency to convert from:</label>
+        <select name="fromCurrency" id="fromCurrency">
+            <option value="CAD">Canadian Dollar</option>
+            <option value="KRW">South Korean Won</option>
+            <option value="USD">US Dollar</option>
+        </select>
+        <br>
+        <label for="amount">Enter amount:</label>
+        <input type="text" name="amount" id="amount">
+        <button type="submit">Convert</button>
+    </form>
+    <div id="result"></div>
+</body>
+</html>
