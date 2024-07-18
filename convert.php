@@ -1,5 +1,4 @@
 <?php
-
 $fromCurrency = $_GET['fromCurrency'];
 $amount = $_GET['amount'];
 
@@ -22,6 +21,6 @@ curl_close($curl);
 $convertedData = json_decode($response, true);
 $convertedAmount = $convertedData['rates']['EUR']['rate_for_amount'];
 
-echo "Converted amount: " . $convertedAmount . " Euros";
-
+echo "<h2>Converted amount:</h2>";
+echo "<p>" . $convertedAmount . " Euros</p>";
 ?>
